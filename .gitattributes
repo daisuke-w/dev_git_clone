@@ -1,0 +1,4 @@
+# Ensure that text files are normalized to Unix line endings
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf

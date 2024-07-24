@@ -1,0 +1,20 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+
+# Ruby
+*.gem
+*.rbc
+.ruby-version
+.ruby-gemset
+/.bundle
+/log/*
+/tmp/*
+/config/master.key
+
+# Rails
+public/assets
+/public/packs
