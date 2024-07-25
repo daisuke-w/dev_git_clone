@@ -16,6 +16,11 @@ class AppView:
         self.scraping = Scraping()
 
     def display_app(self):
+        st.set_page_config(
+            page_title="Clone App",
+            page_icon="🛠️",
+            layout="wide"
+            )
         self._display_header()
         self._display_clone_form()
         self._initialize_repos()
@@ -106,7 +111,7 @@ class AppView:
         ・プレビュー内のボタン等は操作できません。\n
         ・正式なサイトを閲覧する場合は「Railsアプリを別タブで開く」のボタンを押してください。
         """)
-        components.html(preview_html, height=300, scrolling=True)
+        components.html(preview_html, height=400, scrolling=True)
         st.divider()
         st.header("Railsアプリを別タブで開く")
         components.html(button_html)

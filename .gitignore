@@ -2,6 +2,7 @@
 *.pyc
 __pycache__/
 requirements.txt
+/tmp_clone/*
 
 # Virtual environment
 venv/
