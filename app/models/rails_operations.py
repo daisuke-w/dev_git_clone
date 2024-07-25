@@ -105,9 +105,8 @@ class RailsOperations:
         # 必要なgemがインストールされているか確認し、インストールされていない場合はインストール
         self.install_missing_gems(repo_path)
         
-        # bundle install（変更がある場合のみ）
-        if not os.path.exists(os.path.join(repo_path, 'Gemfile.lock')):
-            self.run_command(['bundle', 'install'], cwd=repo_path)
+        # bundle install
+        self.run_command(['bundle', 'install'], cwd=repo_path)
 
         # rails db:create
         result = self.run_command(['rails', 'db:create'], cwd=repo_path)
